@@ -12,7 +12,7 @@ package numeorsprimos;
 public class NumP {
     
     private int n;
-    private boolean np = false;
+    private boolean np = true;
 
     public NumP(int n) {
         this.n = n;

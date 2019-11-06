@@ -23,9 +23,6 @@ public class NumeorsPrimos {
             vet[l] = new NumP(0);
         }
         
-        for(int l=0;l<m;l++){
-            System.out.println(vet[l].getN());
-        }
         int k=0;
         for(int i=2;i<100; i++){
             vet[k].setN(i);
@@ -34,8 +31,8 @@ public class NumeorsPrimos {
         
         for(int i=2;i<m; i++){
             for (int j=2;j<vet[i].getN(); j++) {
-                if (vet[i].getN()%j != 0){
-                    vet[i].setNp(true);
+                if (vet[i].getN()%j == 0){
+                    vet[i].setNp(false);
                 }
             }
         }
